@@ -37,6 +37,153 @@
     color: #60b021;
   }
 }
+.main__products-hidden {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
 .main__products-hidden-text {
   @include textstayle(14px, 500, Ubuntu, #000);
+}
+
+.main__products-hidden-check-wrapper {
+  width: 32px;
+  height: 18.76px;
+  background: linear-gradient(270deg, #8ee901 0%, #4f9c2c 99.06%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 3px;
+}
+
+.main__products-hidden-box {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.main__camera-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0 11px 0;
+}
+
+.main__camera-models {
+  display: flex;
+  flex-direction: column;
+  gap: 74px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main__camera-delete-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.main__camera-delete {
+  @include textstayle(14px, 500, Ubuntu, #000000);
+}
+
+.main__camera-name-text {
+  @include textstayle(14px, 500, Ubuntu, #75758a);
+}
+
+.main__cameras-name-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__img-exit {
+  position: absolute;
+  left: 107px;
+  top: 0;
+}
+
+.main__cameras-name-wrapper {
+  img:nth-child(2) {
+    width: 100px;
+  }
+}
+
+.main__camera-about {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  @include textstayle(14px, 700, Ubuntu, #000);
+}
+
+.main__camera-name {
+  @include textstayle(14px, 500, Ubuntu, #75758a);
+}
+
+.price__home {
+  padding: 10px 0 10px 0;
+}
+
+.price__table-wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.price__money {
+  border: none;
+  td {
+    @include textstayle(14px, 500, Ubuntu, #60b021);
+    line-height: 32px;
+  }
+}
+
+table,
+tr,
+tbody {
+  border-collapse: collapse;
+  border-bottom: 1px solid #efefef;
+
+  line-height: 28px;
+}
+
+.price__title {
+  @include textstayle(14px, 500, Ubuntu, #000000);
+}
+
+td {
+  padding: 10px 0;
+}
+.teble__hover:hover {
+  background: linear-gradient(
+    270deg,
+    rgba(247, 247, 247, 0.5) 0%,
+    #f7f7f7 93.23%
+  );
+}
+td:nth-child(1) {
+  @include textstayle(14px, 500, Ubuntu, #75758a);
+}
+
+table {
+  width: 100%;
+}
+
+.price__button-wrapper {
+  display: flex;
+  padding: 42px 0 90px 0;
+  justify-content: center;
+}
+.price__all {
+  @include textstayle(14px, 500, Ubuntu, #000);
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0px 2px 6px 0px #00000026;
+  padding: 12px 26px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.price__all:active {
+  transform: scale(0.98);
 }

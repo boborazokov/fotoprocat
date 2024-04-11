@@ -65,11 +65,13 @@
   @include textstayle(16px, 400, Ubuntu, #fff);
 }
 
-li {
-  list-style: none;
-  line-height: 25px;
-  @include textstayle(14px, 500, Ubuntu, #000);
-  opacity: 0.5;
+.footer__list {
+  li {
+    list-style: none;
+    line-height: 25px;
+    @include textstayle(14px, 500, Ubuntu, #000);
+    opacity: 0.5;
+  }
 }
 .footer__list-wrappper {
   display: flex;

@@ -202,8 +202,15 @@ input {
 }
 .main__form-input-wrapper label {
   position: absolute;
+  pointer-events: none;
+  transition: 0.2s ease-out;
   left: 20px;
   top: 18px;
+}
+
+input:focus ~ label,
+.input-container:focus-within label {
+  top: 1px;
 }
 
 .main__form-button-save {

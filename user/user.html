@@ -29,7 +29,7 @@
           <div class="header_serch-wrapper">
             <div class="header__input-serch-wrapper">
               <img src="../icon/header__icon-serch.svg" alt="serch-glass" />
-              <input class="header__serch" type="search" value="Поиск" />
+              <input class="header__serch" type="search" placeholder="Поиск" />
             </div>
             <a class="header__login" href="#">войти</a>
           </div>
@@ -72,70 +72,71 @@
         <div class="container">
           <form class="form">
             <div class="main__form-button-wrapper">
-              <button class="main__form-button">Мои данные</button>
-              <button class="main__form-button">История заказов</button>
-              <button class="main__form-button">Бонусные баллы</button>
+              <button class="main__form-button" type="button">
+                Мои данные
+              </button>
+              <button class="main__form-button" type="button">
+                История заказов
+              </button>
+              <button class="main__form-button" type="button">
+                Бонусные баллы
+              </button>
             </div>
             <div class="line"></div>
             <div class="main__form-input-home">
-              <div class="main__form-inputs-wrapper">
-                <div class="main__form-input-wrapper">
-                  <input type="text" id="lastname" />
-                  <label for="lastname">Фамилия *</label>
-                </div>
-                <div class="main__form-input-wrapper">
-                  <input type="text" id="name" />
-                  <label for="name">Имя *</label>
-                </div>
-              </div>
-              <div class="main__form-inputs-wrapper">
-                <div class="main__form-input-wrapper">
-                  <input type="text" />
-                  <label for="name">Отчество *</label>
-                </div>
-                <div class="main__form-input-wrapper">
-                  <input type="text" />
-                  <label for="name">Предыдущая фамилия (если менялась)</label>
-                </div>
-              </div>
-              <div class="main__form-inputs-wrapper">
-                <div class="main__form-input-wrapper">
-                  <input type="text" />
-                  <label for="name">Отчество *</label>
-                </div>
-                <div class="main__form-input-wrapper">
-                  <input type="text" />
-                  <label for="name">Предыдущая фамилия (если менялась)</label>
-                </div>
+              <div class="main__form-input-wrapper">
+                <input type="text" id="lastname" placeholder="Фамилия *" />
+                <input type="text" id="name" placeholder="Имя *" />
               </div>
               <div class="main__form-input-wrapper">
-                <input type="date" value="Дата рождения" />
-                <input type="email" value="E-mail *" />
+                <input type="text" placeholder="Отчество *" />
+                <input
+                  type="text"
+                  placeholder="Предыдущая фамилия (если менялась)"
+                />
               </div>
               <div class="main__form-input-wrapper">
-                <input type="tel" value="Мобильный *" />
-                <input type="tel" value="Доп Телефон" />
-              </div>
-              <h6>Паспортные <span>данные</span></h6>
-              <div class="main__form-input-wrapper">
-                <input type="text" value="Паспорт (Серия, No)" />
-                <input type="date" value="Дата выдачи" />
+                <input type="text" placeholder="Отчество *" />
+                <input
+                  type="text"
+                  placeholder="Предыдущая фамилия (если менялась)"
+                />
               </div>
               <div class="main__form-input-wrapper">
-                <input type="text" value="Адрес прописки" />
-                <input type="text" />
-              </div>
-              <input type="text" value="Адрес проживания, если отличается" />
-              <h6>Данные о месте учебы/работы</h6>
-              <div class="main__form-input-wrapper">
-                <input type="text" value="Место работы/учебы" />
-                <input type="text" value="Должность/специальность" />
+                <input type="date" placeholder="Дата рождения" />
+                <input type="email" placeholder="E-mail *" />
               </div>
               <div class="main__form-input-wrapper">
-                <input type="tel" value="Рабочий телефон" />
-                <input type="text" value="Должность/специальность" />
+                <input type="tel" placeholder="Мобильный *" />
+                <input type="tel" placeholder="Доп Телефон" />
               </div>
-              <input type="text" value="Откуда вы о нас узнали" />
+              <h6 class="main__form-title-passport">
+                Паспортные <span>данные</span>
+              </h6>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Паспорт (Серия, No)" />
+                <input type="date" placeholder="Дата выдачи" />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Адрес прописки" />
+                <input
+                  type="text"
+                  placeholder="Адрес проживания, если отличается"
+                />
+              </div>
+              <input type="text" placeholder="Кем выдан" />
+              <h6 class="main__form-title-user">
+                <span>Данные о месте</span> учебы/работы
+              </h6>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Место работы/учебы" />
+                <input type="text" placeholder="Должность/специальность" />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="tel" placeholder="Рабочий телефон" />
+                <input type="text" placeholder="Должность/специальность" />
+              </div>
+              <input type="text" placeholder="Откуда вы о нас узнали" />
               <div class="main__form-button-save">
                 <button type="submit">Сохранить</button>
               </div>
@@ -160,18 +161,20 @@
               <input
                 class="footer__input-serch"
                 type="search"
-                value="Введите e-mail"
+                placeholder="Введите e-mail"
               />
               <button class="footer__button-like" type="submit">
                 Подписаться
               </button>
             </div>
             <div class="footer__message-phone">
-              <img
-                src="../icon/footer__icon-phone-call.svg"
-                alt="icon-phone-call"
-              />
-              <p class="footer__text-phone-call">Заказать звонок</p>
+              <a href="#"
+                ><img
+                  src="../icon/footer__icon-phone-call.svg"
+                  alt="icon-phone-call"
+                />
+                <p class="footer__text-phone-call">Заказать звонок</p></a
+              >
             </div>
           </div>
         </div>

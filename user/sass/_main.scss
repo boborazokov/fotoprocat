@@ -58,27 +58,26 @@ input {
   gap: 30px;
 }
 
-.main__form-inputs-wrapper {
+.main__form-input-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
 
-.main__form-input-wrapper {
-  width: 100%;
-  position: relative;
-  label {
-    position: absolute;
-    pointer-events: none;
-    transition: 0.2s ease-out;
-    left: 20px;
-    top: 18px;
+.main__form-title-passport {
+  @include textstayle(16px, 600, Ubuntu, #000);
+  span {
+    color: #4f9c2c;
   }
 }
-input:focus ~ label,
-.input-container:focus-within label {
-  top: 1px;
+
+.main__form-title-user {
+  @include textstayle(16px, 600, Ubuntu, #000);
+  span {
+    color: #4f9c2c;
+  }
 }
+
 .main__form-button-save {
   display: flex;
   justify-content: center;

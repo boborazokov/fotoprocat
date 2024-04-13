@@ -190,27 +190,30 @@ input {
   gap: 30px;
 }
 
-.main__form-inputs-wrapper {
+.main__form-input-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
 
-.main__form-input-wrapper {
-  width: 100%;
-  position: relative;
+.main__form-title-passport {
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
 }
-.main__form-input-wrapper label {
-  position: absolute;
-  pointer-events: none;
-  transition: 0.2s ease-out;
-  left: 20px;
-  top: 18px;
+.main__form-title-passport span {
+  color: #4f9c2c;
 }
 
-input:focus ~ label,
-.input-container:focus-within label {
-  top: 1px;
+.main__form-title-user {
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+.main__form-title-user span {
+  color: #4f9c2c;
 }
 
 .main__form-button-save {

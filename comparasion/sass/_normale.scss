@@ -5,12 +5,15 @@
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 
 .container {
   max-width: 1250px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 @mixin textstayle($font-size, $font-weight, $font-family, $color) {
   font-family: $font-family;

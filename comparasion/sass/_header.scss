@@ -45,7 +45,7 @@
 .header__serch {
   background-color: #f7f7f7;
   border: none;
-  border-top: 1.5px solid rgb(162, 162, 162);
+  border-top: 2px solid rgb(162, 162, 162);
   border-radius: 20px;
   outline: none;
   padding: 10px 20px 10px 35px;
@@ -75,4 +75,26 @@
   position: absolute;
   top: -10px;
   left: 10px;
+}
+.header__icon-bars {
+  font-size: 25px;
+}
+
+.header__icon-link-bars {
+  display: none;
+  color: #000;
+}
+@media screen and (max-width: 990px) {
+  .header__link-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__input-serch-wrapper,
+  .header__login {
+    display: none;
+  }
+  .header__icon-link-bars {
+    display: block;
+  }
 }

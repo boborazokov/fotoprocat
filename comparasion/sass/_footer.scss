@@ -106,23 +106,3 @@
   display: flex;
   gap: 16px;
 }
-
-@media screen and (max-width: 900px) {
-  .footer__message-serch-email {
-    display: none;
-  }
-  .footer__list-wrappper {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 420px) {
-  .footer__message-wrapper {
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-  }
-  .footer__message-phone {
-    padding: 0 0 0 10px;
-  }
-}

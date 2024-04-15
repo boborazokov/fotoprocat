@@ -50,6 +50,9 @@
               <span class="header__icon-number">3</span>
             </div>
           </div>
+          <a class="header__icon-link-bars" href="#">
+            <i class="fa-solid fa-bars header__icon-bars"></i
+          ></a>
         </div>
       </div>
     </header>
@@ -80,9 +83,10 @@
             </div>
             <div class="main__products-hidden">
               <p class="main__products-hidden-text">Скрыть одинаковые</p>
-              <div class="main__products-hidden-check-wrapper">
+              <input type="checkbox" name="turn" id="run" />
+              <label for="run" class="main__products-hidden-check-wrapper">
                 <div class="main__products-hidden-box"></div>
-              </div>
+              </label>
             </div>
           </div>
         </div>
@@ -90,165 +94,172 @@
       <div class="line"></div>
       <section class="main table">
         <div class="container">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="main__camera-models">
-                    <div class="main__camera-delete-wrapper">
-                      <img
-                        src="../icon/main__delete-korzinka.svg"
-                        alt="img-basket"
-                      />
-                      <p class="main__camera-delete">Очистить список</p>
+          <div class="main__table-wrapper">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="main__camera-models">
+                      <div class="main__camera-delete-wrapper">
+                        <img
+                          src="../icon/main__delete-korzinka.svg"
+                          alt="img-basket"
+                        />
+                        <p class="main__camera-delete">Очистить список</p>
+                      </div>
+                      <p class="main__camera-name-text">
+                        Модель <br />
+                        Фотоаппарата
+                      </p>
                     </div>
-                    <p class="main__camera-name-text">
-                      Модель <br />
-                      Фотоаппарата
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="main__cameras-name-wrapper">
-                    <img
-                      class="main__img-exit"
-                      src="../icon/main__camera-exit.svg"
-                      alt="icon-exit"
-                    />
-                    <img src="../img/main__camera-canon.png" alt="camera" />
-                    <p class="main__camera-about">
-                      D5300 Kit <span class="main__camera-name">Nikon </span>
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="main__cameras-name-wrapper">
-                    <img
-                      class="main__img-exit"
-                      src="../icon/main__camera-exit.svg"
-                      alt="icon-exit"
-                    />
-                    <img src="../img/main__camera-canon.png" alt="camera" />
-                    <p class="main__camera-about">
-                      D5300 Kit <span class="main__camera-name">Nikon </span>
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="main__cameras-name-wrapper">
-                    <img
-                      class="main__img-exit"
-                      src="../icon/main__camera-exit.svg"
-                      alt="icon-exit"
-                    />
-                    <img src="../img/main__camera-nikon (2).png" alt="camera" />
-                    <p class="main__camera-about">
-                      D5300 Kit <span class="main__camera-name">Nikon </span>
-                    </p>
-                  </div>
-                </td>
-                <td>
-                  <div class="main__cameras-name-wrapper">
-                    <img
-                      class="main__img-exit"
-                      src="../icon/main__camera-exit.svg"
-                      alt="icon-exit"
-                    />
-                    <img src="../img/main__camera-nikon.png" alt="camera" />
-                    <p class="main__camera-about">
-                      D5300 Kit <span class="main__camera-name">Nikon </span>
-                    </p>
-                  </div>
-                </td>
-              </tr>
-              <h3 class="price__title">Цена</h3>
-              <tr class="price__money">
-                <td>Будний</td>
-                <td>1 870 Р</td>
-                <td>1 650 Р</td>
-                <td>990 Р</td>
-                <td>1 650 Р</td>
-              </tr>
-              <tr class="price__money">
-                <td>Выходной</td>
-                <td>1 970 Р</td>
-                <td>10 800 Р</td>
-                <td>29 400 Р</td>
-                <td>29 400 Р</td>
-              </tr>
-              <tr class="price__money">
-                <td>Неделя</td>
-                <td>1 080 Р</td>
-                <td>1 080 Р</td>
-                <td>5 430 Р</td>
-                <td>21 760 Р</td>
-              </tr>
-              <tr class="price__money">
-                <td>Месяц</td>
-                <td>1 790 Р</td>
-                <td>1 790 Р</td>
-                <td>9 300 Р</td>
-                <td>34 900 Р</td>
-              </tr>
+                  </td>
+                  <td>
+                    <div class="main__cameras-name-wrapper">
+                      <img
+                        class="main__img-exit"
+                        src="../icon/main__camera-exit.svg"
+                        alt="icon-exit"
+                      />
+                      <img src="../img/main__camera-canon.png" alt="camera" />
+                      <p class="main__camera-about">
+                        D5300 Kit <span class="main__camera-name">Nikon </span>
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="main__cameras-name-wrapper">
+                      <img
+                        class="main__img-exit"
+                        src="../icon/main__camera-exit.svg"
+                        alt="icon-exit"
+                      />
+                      <img src="../img/main__camera-canon.png" alt="camera" />
+                      <p class="main__camera-about">
+                        D5300 Kit <span class="main__camera-name">Nikon </span>
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="main__cameras-name-wrapper">
+                      <img
+                        class="main__img-exit"
+                        src="../icon/main__camera-exit.svg"
+                        alt="icon-exit"
+                      />
+                      <img
+                        src="../img/main__camera-nikon (2).png"
+                        alt="camera"
+                      />
+                      <p class="main__camera-about">
+                        D5300 Kit <span class="main__camera-name">Nikon </span>
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="main__cameras-name-wrapper">
+                      <img
+                        class="main__img-exit"
+                        src="../icon/main__camera-exit.svg"
+                        alt="icon-exit"
+                      />
+                      <img src="../img/main__camera-nikon.png" alt="camera" />
+                      <p class="main__camera-about">
+                        D5300 Kit <span class="main__camera-name">Nikon </span>
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__money-title">Цена</td>
+                </tr>
+                <tr class="price__money">
+                  <td>Будний</td>
+                  <td>1 870 Р</td>
+                  <td>1 650 Р</td>
+                  <td>990 Р</td>
+                  <td>1 650 Р</td>
+                </tr>
+                <tr class="price__money">
+                  <td>Выходной</td>
+                  <td>1 970 Р</td>
+                  <td>10 800 Р</td>
+                  <td>29 400 Р</td>
+                  <td>29 400 Р</td>
+                </tr>
+                <tr class="price__money">
+                  <td>Неделя</td>
+                  <td>1 080 Р</td>
+                  <td>1 080 Р</td>
+                  <td>5 430 Р</td>
+                  <td>21 760 Р</td>
+                </tr>
+                <tr class="price__money">
+                  <td>Месяц</td>
+                  <td>1 790 Р</td>
+                  <td>1 790 Р</td>
+                  <td>9 300 Р</td>
+                  <td>34 900 Р</td>
+                </tr>
 
-              <tr class="teble__hover">
-                <td>Глубина</td>
-                <td>CMOS</td>
-                <td>BSI</td>
-                <td>LTCM</td>
-                <td>CMOS</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Тип</td>
-                <td>Зеркальная</td>
-                <td>Компактная</td>
-                <td>Беззеркальная</td>
-                <td>2Зеркальная</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Матрица</td>
-                <td>23.5 x 15.6 мм</td>
-                <td>1/2.3</td>
-                <td>22.3 х 14.9 мм</td>
-                <td>23.5 x 15.6 мм</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Разрешение</td>
-                <td>45 Мпикс</td>
-                <td>9 Мпикс</td>
-                <td>60 Мпикс</td>
-                <td>45 Мпикс</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Видео</td>
-                <td>3K</td>
-                <td>Full HD</td>
-                <td>UHD 4K</td>
-                <td>3К</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Байонет</td>
-                <td>Nikon F</td>
-                <td>Canon A</td>
-                <td>Sony E</td>
-                <td>Nikon F</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Экспокоррекция</td>
-                <td>+/- 5 EV с шагом 1/3</td>
-                <td>+/- 2 EV с шагом 1/5</td>
-                <td>+/- 4 EV с шагом 1/2</td>
-                <td>+/- 5 EV с шагом 1/3</td>
-              </tr>
-              <tr class="teble__hover">
-                <td>Масса</td>
-                <td>530 г</td>
-                <td>270 г</td>
-                <td>615 г</td>
-                <td>530 г</td>
-              </tr>
-            </tbody>
-          </table>
+                <tr class="teble__hover">
+                  <td>Глубина</td>
+                  <td>CMOS</td>
+                  <td>BSI</td>
+                  <td>LTCM</td>
+                  <td>CMOS</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Тип</td>
+                  <td>Зеркальная</td>
+                  <td>Компактная</td>
+                  <td>Беззеркальная</td>
+                  <td>2Зеркальная</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Матрица</td>
+                  <td>23.5 x 15.6 мм</td>
+                  <td>1/2.3</td>
+                  <td>22.3 х 14.9 мм</td>
+                  <td>23.5 x 15.6 мм</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Разрешение</td>
+                  <td>45 Мпикс</td>
+                  <td>9 Мпикс</td>
+                  <td>60 Мпикс</td>
+                  <td>45 Мпикс</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Видео</td>
+                  <td>3K</td>
+                  <td>Full HD</td>
+                  <td>UHD 4K</td>
+                  <td>3К</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Байонет</td>
+                  <td>Nikon F</td>
+                  <td>Canon A</td>
+                  <td>Sony E</td>
+                  <td>Nikon F</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Экспокоррекция</td>
+                  <td>+/- 5 EV с шагом 1/3</td>
+                  <td>+/- 2 EV с шагом 1/5</td>
+                  <td>+/- 4 EV с шагом 1/2</td>
+                  <td>+/- 5 EV с шагом 1/3</td>
+                </tr>
+                <tr class="teble__hover">
+                  <td>Масса</td>
+                  <td>530 г</td>
+                  <td>270 г</td>
+                  <td>615 г</td>
+                  <td>530 г</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="price__button-wrapper">
             <button class="price__all">Показать все</button>
           </div>
@@ -329,35 +340,43 @@
             </ul>
             <ul class="footer__list">
               <h3>Компании</h3>
-              <li>о компании</li>
-              <li>новости</li>
-              <li>вакансии</li>
-              <li>Политики</li>
-              <li>конфиденциальности</li>
+              <a class="footer__list-link" href="#"> <li>о компании</li></a>
+              <a class="footer__list-link" href="#"> <li>новости</li></a>
+              <a class="footer__list-link" href="#"> <li>вакансии</li></a>
+              <a class="footer__list-link" href="#"> <li>Политики</li></a>
+              <a class="footer__list-link" href="#">
+                <li>конфиденциальности</li></a
+              >
             </ul>
             <ul>
               <h3>Клиентам</h3>
-              <li>о компании</li>
-              <li>новости</li>
-              <li>вакансии</li>
-              <li>Политики</li>
-              <li>конфиденциальности</li>
+              <a class="footer__list-link" href="#"> <li>о компании</li></a>
+              <a class="footer__list-link" href="#"> <li>новости</li></a>
+              <a class="footer__list-link" href="#"> <li>вакансии</li></a>
+              <a class="footer__list-link" href="#"> <li>Политики</li></a>
+              <a class="footer__list-link" href="#">
+                <li>конфиденциальности</li></a
+              >
             </ul>
             <ul>
               <h3>Компании</h3>
-              <li>о компании</li>
-              <li>новости</li>
-              <li>вакансии</li>
-              <li>Политики</li>
-              <li>конфиденциальности</li>
+              <a class="footer__list-link" href="#"> <li>о компании</li></a>
+              <a class="footer__list-link" href="#"> <li>новости</li></a>
+              <a class="footer__list-link" href="#"> <li>вакансии</li></a>
+              <a class="footer__list-link" href="#"> <li>Политики</li></a>
+              <a class="footer__list-link" href="#">
+                <li>конфиденциальности</li></a
+              >
             </ul>
             <ul>
               <h3>Компании</h3>
-              <li>о компании</li>
-              <li>новости</li>
-              <li>вакансии</li>
-              <li>Политики</li>
-              <li>конфиденциальности</li>
+              <a class="footer__list-link" href="#"> <li>о компании</li></a>
+              <a class="footer__list-link" href="#"> <li>новости</li></a>
+              <a class="footer__list-link" href="#"> <li>вакансии</li></a>
+              <a class="footer__list-link" href="#"> <li>Политики</li></a>
+              <a class="footer__list-link" href="#">
+                <li>конфиденциальности</li></a
+              >
             </ul>
           </div>
         </div>

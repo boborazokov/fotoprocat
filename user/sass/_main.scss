@@ -1,0 +1,95 @@
+.main__title-home {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 45px 0;
+}
+
+.main__title-text {
+  @include textstayle(14px, 600, Ubuntu, #000);
+  opacity: 0.5;
+}
+
+.main__title {
+  h2 {
+    @include textstayle(30px, 600, Ubuntu, #8ee901);
+  }
+}
+.main__title-kabinet-text {
+  @include textstayle(30px, 600, Ubuntu, #000);
+}
+
+.form {
+  padding: 0 0 96px 0;
+  position: relative;
+}
+
+.main__form-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: -42px;
+}
+
+.main__form-button {
+  padding: 12px 20px;
+  border: 1px solid #e3e3e3;
+  @include textstayle(16px, 500, Ubuntu, #75758a);
+  cursor: pointer;
+}
+.main__form-button:hover {
+  background-color: #fff;
+  border-bottom: none;
+  color: #000;
+}
+input {
+  width: 100%;
+  padding: 18px 20px;
+  outline: none;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+}
+
+.main__form-input-home {
+  padding: 30px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main__form-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.main__form-title-passport {
+  @include textstayle(16px, 600, Ubuntu, #000);
+  span {
+    color: #4f9c2c;
+  }
+}
+
+.main__form-title-user {
+  @include textstayle(16px, 600, Ubuntu, #000);
+  span {
+    color: #4f9c2c;
+  }
+}
+
+.main__form-button-save {
+  display: flex;
+  justify-content: center;
+  button {
+    padding: 16px 25px;
+    border-radius: 100px;
+    border: none;
+    @include textstayle(14px, 500, Ubuntu, #ffffff);
+    background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
+    cursor: pointer;
+  }
+  button:active {
+    transform: scale(0.98);
+  }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user</title>
+    <link rel="stylesheet" href="./sass/stayle.css" />
+    <link rel="icon" href="../img/img-photo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__home">
+          <div class="header__logo-wrapper">
+            <p class="header__logo-text">
+              fotoprokat <span class="header__logo-number">24</span>
+            </p>
+          </div>
+          <div class="header__link-wrapper">
+            <a href="#">Каталог</a>
+            <a href="#">О компании</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="header_serch-wrapper">
+            <div class="header__input-serch-wrapper">
+              <img src="../icon/header__icon-serch.svg" alt="serch-glass" />
+              <input class="header__serch" type="search" placeholder="Поиск" />
+            </div>
+            <a class="header__login" href="#">войти</a>
+          </div>
+          <div class="header__icons">
+            <div class="header__icon-star-wrapper header__icon-position">
+              <img src="../icon/header__icon-star.svg" alt="star" />
+              <span class="header__icon-number">5</span>
+            </div>
+            <div class="header__icon-compare-wrapper header__icon-position">
+              <img src="../icon/header__icon-compare.svg" alt="compare" />
+              <span class="header__icon-number">3</span>
+            </div>
+            <div class="header__icon-shopping-wrapper header__icon-position">
+              <img
+                src="../icon/header__icon-shopping-cart.svg"
+                alt="shopping"
+              />
+              <span class="header__icon-number">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="line"></div>
+
+    <main class="main">
+      <section class="main__title">
+        <div class="container">
+          <div class="main__title-home">
+            <p class="main__title-text">Главная / Сравнить товары</p>
+            <div class="main__title">
+              <h2>
+                Сравнить <span class="main__title-kabinet-text">Кабинет</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__form">
+        <div class="container">
+          <form class="form">
+            <div class="main__form-button-wrapper">
+              <button class="main__form-button" type="button">
+                Мои данные
+              </button>
+              <button class="main__form-button" type="button">
+                История заказов
+              </button>
+              <button class="main__form-button" type="button">
+                Бонусные баллы
+              </button>
+            </div>
+            <div class="line"></div>
+            <div class="main__form-input-home">
+              <div class="main__form-input-wrapper">
+                <input type="text" id="lastname" placeholder="Фамилия *" />
+                <input type="text" id="name" placeholder="Имя *" />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Отчество *" />
+                <input
+                  type="text"
+                  placeholder="Предыдущая фамилия (если менялась)"
+                />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Отчество *" />
+                <input
+                  type="text"
+                  placeholder="Предыдущая фамилия (если менялась)"
+                />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="date" placeholder="Дата рождения" />
+                <input type="email" placeholder="E-mail *" />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="tel" placeholder="Мобильный *" />
+                <input type="tel" placeholder="Доп Телефон" />
+              </div>
+              <h6 class="main__form-title-passport">
+                Паспортные <span>данные</span>
+              </h6>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Паспорт (Серия, No)" />
+                <input type="date" placeholder="Дата выдачи" />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Адрес прописки" />
+                <input
+                  type="text"
+                  placeholder="Адрес проживания, если отличается"
+                />
+              </div>
+              <input type="text" placeholder="Кем выдан" />
+              <h6 class="main__form-title-user">
+                <span>Данные о месте</span> учебы/работы
+              </h6>
+              <div class="main__form-input-wrapper">
+                <input type="text" placeholder="Место работы/учебы" />
+                <input type="text" placeholder="Должность/специальность" />
+              </div>
+              <div class="main__form-input-wrapper">
+                <input type="tel" placeholder="Рабочий телефон" />
+                <input type="text" placeholder="Должность/специальность" />
+              </div>
+              <input type="text" placeholder="Откуда вы о нас узнали" />
+              <div class="main__form-button-save">
+                <button type="submit">Сохранить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__message">
+        <div class="container">
+          <div class="footer__message-wrapper">
+            <div class="footer__message-icon-wrapper">
+              <img src="../icon/footer__icon-mesege.svg" alt="icon-message" />
+              <p class="footer__message-text">
+                Подпишитесь <br />
+                на новости и акции
+              </p>
+            </div>
+            <div class="footer__message-serch-email">
+              <input
+                class="footer__input-serch"
+                type="search"
+                placeholder="Введите e-mail"
+              />
+              <button class="footer__button-like" type="submit">
+                Подписаться
+              </button>
+            </div>
+            <div class="footer__message-phone">
+              <a href="#"
+                ><img
+                  src="../icon/footer__icon-phone-call.svg"
+                  alt="icon-phone-call"
+              /></a>
+              <a href="#">
+                <p class="footer__text-phone-call">Заказать звонок</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__list">
+        <div class="container">
+          <div class="footer__list-wrappper">
+            <ul class="footer__list-logo-wrapper">
+              <p class="footer__logo-text">
+                fotoprokat <span class="footer__logo-number">24</span>
+              </p>
+              <li class="footer__list-logo-text">
+                Самый удобный в Москве сервис аренды фото, видео и кинотехники
+              </li>
+              <li>© 2015 – 2019 Fotoprokat 24</li>
+              <div class="footer__list-icon">
+                <a href="https://www.facebook.com/"
+                  ><img
+                    src="../icon/footer-icon-facebook.svg"
+                    alt="icon-facebook"
+                /></a>
+                <a href="https://www.twitter.com/"
+                  ><img
+                    src="../icon/footer-icon-twitter.svg"
+                    alt="icon-twitter"
+                /></a>
+                <a href="https://www.vk.com/"
+                  ><img src="../icon/footer-icon-vk.svg" alt="icon-vk"
+                /></a>
+                <a href="https://www.youtube.com/"
+                  ><img
+                    src="../icon/footer-icon-youtube.svg"
+                    alt="icon-youtube"
+                /></a>
+                <a href="https://www.instagram.com/"
+                  ><img
+                    src="../icon/footer-icon-instagram.svg"
+                    alt="icon-instagram"
+                /></a>
+              </div>
+            </ul>
+            <ul class="footer__list">
+              <h3>Компании</h3>
+              <li>о компании</li>
+              <li>новости</li>
+              <li>вакансии</li>
+              <li>Политики</li>
+              <li>конфиденциальности</li>
+            </ul>
+            <ul>
+              <h3>Клиентам</h3>
+              <li>о компании</li>
+              <li>новости</li>
+              <li>вакансии</li>
+              <li>Политики</li>
+              <li>конфиденциальности</li>
+            </ul>
+            <ul>
+              <h3>Компании</h3>
+              <li>о компании</li>
+              <li>новости</li>
+              <li>вакансии</li>
+              <li>Политики</li>
+              <li>конфиденциальности</li>
+            </ul>
+            <ul>
+              <h3>Компании</h3>
+              <li>о компании</li>
+              <li>новости</li>
+              <li>вакансии</li>
+              <li>Политики</li>
+              <li>конфиденциальности</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

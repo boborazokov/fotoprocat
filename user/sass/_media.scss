@@ -1,0 +1,48 @@
+@media screen and (max-width: 990px) {
+  .header__link-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__input-serch-wrapper,
+  .header__login {
+    display: none;
+  }
+  .header__icon-link-bars {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__title-home {
+    padding: 20px 0;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .main__products-wrapper {
+    display: none;
+  }
+
+  .price__button-wrapper {
+    padding: 30px 0 30px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer__message-serch-email {
+    display: none;
+  }
+  .footer__list-wrappper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__message-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .footer__message-phone {
+    padding: 0 0 0 10px;
+  }
+}

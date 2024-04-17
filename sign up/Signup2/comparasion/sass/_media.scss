@@ -1,0 +1,98 @@
+@media screen and (max-width: 1237px) {
+  .main__feature--p1{
+      display: none;
+  }
+  .main__feature__header{
+    display:flex;
+    justify-content: center;
+}
+    }
+   
+@media screen and (max-width: 1005px) {
+.header__link-wrapper-p2{
+    display: none;
+}
+  }
+ @media screen and (max-width:918px) {
+    .header__link-wrapper-p3{
+        display: none;
+    }
+      }
+      @media screen and (max-width:898px) {
+        .footer__list-wrappper {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          
+        }
+        .footer4{
+            display: none;
+        }
+          }
+ @media screen and (max-width:860px) {
+        .header__link-wrapper-p4{
+            display: none;
+        }
+          }
+          @media screen and (max-width:860px) {
+            .header__link-wrapper-p1{
+                display: none;
+            }
+              }
+              @media screen and (max-width:779px) {
+                .footer__list-wrappper {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  
+                }
+                .footer3{
+                    display: none;
+                }
+                  }
+              
+              @media screen and (max-width:724px) {
+                .header__icons{
+                    display: none;
+                }
+                .main__inputs{
+                  display: grid;
+                  grid-template-columns: 1fr;
+                }
+                .main__inputs--2{
+                  width: 100%;
+                }
+                  }
+                  @media screen and (max-width:860px) {
+                    .header__input-serch-wrapper{
+                        display: none;
+                    }
+                      }
+                      @media screen and (max-width:574px) {
+                        .footer__list-wrappper {
+                          display: grid;
+                          grid-template-columns: 1fr 1fr;
+                          
+                        }
+                        .footer2{
+                            display: none;
+                        }
+                        .footer__message-serch-email{
+                          display: none;
+                        }
+                          }
+                          @media screen and (max-width:532px) {
+                            .footer__list-wrappper {
+                              display: grid;
+                              grid-template-columns: 1fr;
+                              
+                            }
+                            .footer__list-wrappper{
+                              display: flex;
+                              justify-content: center;
+                            }
+                            .footer1{
+                                display: none;
+                            }
+                            .fa-barss{
+                              display: block;
+                            }
+                              }

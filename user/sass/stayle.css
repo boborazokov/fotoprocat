@@ -6,11 +6,15 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1250px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .line {
@@ -73,7 +77,7 @@ li {
 .header__serch {
   background-color: #f7f7f7;
   border: none;
-  border-top: 1.5px solid rgb(162, 162, 162);
+  border-top: 2px solid rgb(162, 162, 162);
   border-radius: 20px;
   outline: none;
   padding: 10px 20px 10px 35px;
@@ -117,6 +121,29 @@ li {
   left: 10px;
 }
 
+.header__icon-bars {
+  font-size: 25px;
+}
+
+.header__icon-link-bars {
+  display: none;
+  color: #000;
+}
+
+@media screen and (max-width: 990px) {
+  .header__link-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__input-serch-wrapper,
+  .header__login {
+    display: none;
+  }
+  .header__icon-link-bars {
+    display: block;
+  }
+}
 .main__title-home {
   display: flex;
   flex-direction: column;
@@ -359,4 +386,24 @@ input {
 .footer__list-icon {
   display: flex;
   gap: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__message-serch-email {
+    display: none;
+  }
+  .footer__list-wrappper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__message-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .footer__message-phone {
+    padding: 0 0 0 10px;
+  }
 }/*# sourceMappingURL=stayle.css.map */

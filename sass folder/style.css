@@ -193,6 +193,7 @@ span {
 }
 
 .aside-title h1 {
+  display: inline;
   margin: 50 10px;
 }
 

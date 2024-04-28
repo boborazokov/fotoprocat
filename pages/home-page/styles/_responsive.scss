@@ -50,6 +50,12 @@
             flex-wrap: wrap;
         }
     }
+    .results-wrapper {
+        grid-template-columns: auto auto;
+    }
+    #fourth {
+        grid-row: 2/4;
+    }
 }
 
 @media (max-width: 700px) {
@@ -111,6 +117,13 @@
                 padding: 15px 25px;
             }
         }
+    }
+    .results-wrapper {
+        grid-template-columns: auto;
+    }
+    #fourth {
+        grid-row: 2/3;
+        grid-column: 1/2;
     }
 }
 

@@ -1,0 +1,37 @@
+@mixin font ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.results-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 50px 0;
+    img {
+        width: 100%;
+    }
+    .results-paragraph {
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 15px;
+        
+        p {
+            @include font(16px, 550);
+            background-color: white;
+            box-shadow: 0px 2px 6px 0px #00000026;
+            padding: 8px;
+            width: fit-content;
+        }
+    }
+    #second {
+        p {
+            background-color: #75758A;
+            color: white;
+        }
+    }
+}
+#fourth {
+    grid-column: 1/3;
+}

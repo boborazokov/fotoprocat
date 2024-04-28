@@ -178,7 +178,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .icon-wrapper div {
   width: 20%;
@@ -192,6 +192,133 @@ li {
   font-family: "Ubuntu", sans-serif;
 }
 
+.products-title {
+  font-size: 22px;
+  font-weight: 650;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.product {
+  width: 31%;
+  border: 1px solid #efefef;
+}
+.product .cam-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.product .cam-wrapper img {
+  width: fit-content;
+}
+.product .cam-wrapper .product-icon {
+  position: absolute;
+  margin-left: 19.5em;
+}
+.product .cam-wrapper .cam-title {
+  text-align: center;
+}
+.product h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.product p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #75758A;
+}
+.product .price-wrapper {
+  display: flex;
+}
+.product .price-wrapper .price-text {
+  border: 1px solid #efefef;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.product .button-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+.product .button-wrapper button {
+  border-radius: 100px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 550;
+  font-family: "Ubuntu", sans-serif;
+}
+.product .button-wrapper .btn-white {
+  background-color: #ffffff;
+}
+.product .button-wrapper .btn-green {
+  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-info p {
+  width: 570px;
+  color: #75758A;
+  font-size: 14px;
+  font-weight: 450;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 26px;
+  text-align: center;
+}
+.product-info .product-button {
+  display: flex;
+  gap: 15px;
+  width: 570px;
+  padding: 15px 0;
+}
+.product-info .product-button button {
+  width: 100%;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 550;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  padding: 15px 25px;
+}
+
+@media (max-width: 1200px) {
+  .products-wrapper {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 45%;
+  }
+}
 @media (max-width: 1000px) {
   .main-icons {
     background-color: #FFFFFF;
@@ -210,6 +337,20 @@ li {
   }
   .icon-wrapper div img {
     width: fit-content;
+  }
+}
+@media (max-width: 800px) {
+  .product .cam-wrapper .product-icon {
+    margin-left: 14em;
+  }
+  .product .price-wrapper {
+    flex-wrap: wrap;
+  }
+  .product .price-wrapper .price-text {
+    width: 45%;
+  }
+  .product .button-wrapper {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 700px) {
@@ -244,6 +385,29 @@ li {
     font-weight: 600;
     font-family: "Ubuntu", sans-serif;
   }
+  .product {
+    width: 100%;
+  }
+  .product .cam-wrapper .product-icon {
+    margin-left: 25em;
+  }
+  .product .price-wrapper {
+    flex-wrap: nowrap;
+  }
+  .product .button-wrapper {
+    flex-wrap: nowrap;
+  }
+  .product-info p {
+    width: 100%;
+  }
+  .product-info .product-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .product-info .product-button button {
+    width: fit-content;
+    padding: 15px 25px;
+  }
 }
 @media (max-width: 470px) {
   .main .main-title {
@@ -251,6 +415,20 @@ li {
   }
   .icon-wrapper div {
     width: 45%;
+  }
+  .product .cam-wrapper .product-icon {
+    margin-left: 18em;
+  }
+  .product .price-wrapper .price-text {
+    padding: 5px;
+  }
+  .product .button-wrapper button {
+    padding: 10px 20px;
+  }
+  .products-title {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
   }
 }
 

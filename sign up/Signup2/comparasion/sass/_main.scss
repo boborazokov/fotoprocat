@@ -18,7 +18,9 @@
     @include textstayle(30px, 600, Ubuntu, #000);
   }
 }
-
+.main__p{
+  max-width: 400px;
+}
 .main__products-home {
   display: flex;
   justify-content: space-between;
@@ -66,7 +68,7 @@ height: 60px;
 padding: 30px;
 }
 .main__inputs--2{
-  width: 100%;
+  width: 204%;
   height: 60px;
   padding: 30px;
   }

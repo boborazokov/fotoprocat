@@ -66,15 +66,21 @@
                         display: none;
                     }
                       }
+                      @media screen and (max-width:660px) {
+                        .footer2{
+                            display: none;
+                        }
+                          }
                       @media screen and (max-width:574px) {
                         .footer__list-wrappper {
                           display: grid;
                           grid-template-columns: 1fr 1fr;
                           
                         }
-                        .footer2{
-                            display: none;
+                        .main__p {
+                          width:500px ;
                         }
+                      
                         .footer__message-serch-email{
                           display: none;
                         }
@@ -96,3 +102,9 @@
                               display: block;
                             }
                               }
+                              @media screen and (max-width:432px) {
+                            .main__p{
+                              width: 100%;
+                            }
+                         
+                                  }

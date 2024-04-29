@@ -145,6 +145,10 @@
   color: #000;
 }
 
+.main__p {
+  max-width: 400px;
+}
+
 .main__products-home {
   display: flex;
   justify-content: space-between;
@@ -203,7 +207,7 @@
 }
 
 .main__inputs--2 {
-  width: 100%;
+  width: 204%;
   height: 60px;
   padding: 30px;
 }
@@ -387,6 +391,11 @@ li {
   gap: 16px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1237px) {
   .main__feature--p1 {
     display: none;
@@ -451,13 +460,18 @@ li {
     display: none;
   }
 }
+@media screen and (max-width: 660px) {
+  .footer2 {
+    display: none;
+  }
+}
 @media screen and (max-width: 574px) {
   .footer__list-wrappper {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .footer2 {
-    display: none;
+  .main__p {
+    width: 500px;
   }
   .footer__message-serch-email {
     display: none;
@@ -477,5 +491,10 @@ li {
   }
   .fa-barss {
     display: block;
+  }
+}
+@media screen and (max-width: 432px) {
+  .main__p {
+    width: 100%;
   }
 }/*# sourceMappingURL=stayle.css.map */

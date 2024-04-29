@@ -1,6 +1,5 @@
 {
-    "cSpell.words": [
-        "Каталог"
-    ],
-    "cSpell.language": "en,ru"
+  "cSpell.words": ["Каталог"],
+  "cSpell.language": "en,ru",
+  "liveServer.settings.port": 5501
 }

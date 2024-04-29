@@ -1,0 +1,54 @@
+@mixin font ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.statistics {
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+    .statistics-paragraph {
+        width: 570px;
+        color: #75758A;
+        @include font(14px, 450);
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+.statistics-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-wrapper {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+    width: 100%;
+    .service-info {
+        width: 25%;
+        background-color: #FFFFFF;
+        padding: 20px 25px;
+        box-shadow: 0px 2px 6px 0px #00000026;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        p {
+            @include font(14px, 600)
+        }
+        img {
+            margin-top: 50px;
+        }
+    }
+}
+.btn-green {
+    width: fit-content;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+    color: white;
+    border: none;
+    @include font(14px, 550);
+    text-transform: uppercase;
+    padding: 15px 35px;
+}

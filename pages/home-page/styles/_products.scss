@@ -101,12 +101,19 @@
         button {
             width: 100%;
             border-radius: 100px;
-            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
-            color: white;
             border: none;
             @include font(14px, 550);
             text-transform: uppercase;
             padding: 15px 25px;
+        }
+        .btn-green {
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            color: white;
+        }
+        .btn-white {
+            background: #ffffff;
+            box-shadow: 0px 2px 6px 0px #00000026;
+
         }
     }
 }

@@ -438,6 +438,44 @@ li {
   grid-row: 2/3;
 }
 
+.companies {
+  padding: 100px 0;
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.companies .companies-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.companies .companies-wrapper .companies-info {
+  width: 22%;
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.companies .companies-wrapper .companies-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.companies .companies-wrapper .companies-info p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #75758A;
+}
+.companies .companies-wrapper .companies-info a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #60B021;
+}
+
 @media (max-width: 1200px) {
   .products-wrapper {
     flex-wrap: wrap;
@@ -469,6 +507,12 @@ li {
     flex-wrap: wrap;
   }
   .service-wrapper .service-info {
+    width: 30%;
+  }
+  .companies .companies-wrapper {
+    flex-wrap: wrap;
+  }
+  .companies .companies-wrapper .companies-info {
     width: 30%;
   }
 }
@@ -529,6 +573,13 @@ li {
   }
   .statistics .statistics-paragraph {
     width: 100%;
+  }
+  .companies .companies-wrapper {
+    flex-wrap: wrap;
+  }
+  .companies .companies-wrapper .companies-info {
+    padding: 20px;
+    width: 45%;
   }
 }
 @media (max-width: 600px) {
@@ -610,6 +661,16 @@ li {
   }
   .service-wrapper .service-info {
     width: 100%;
+  }
+  .companies {
+    padding: 30px 0;
+  }
+  .companies .companies-wrapper {
+    padding: 50px;
+    justify-content: flex-start;
+  }
+  .companies .companies-wrapper .companies-info {
+    width: fit-content;
   }
 }
 

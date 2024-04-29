@@ -37,6 +37,14 @@
             width: 30%;
         }
     }
+    .companies {
+        .companies-wrapper {
+            flex-wrap: wrap;
+            .companies-info {
+                width: 30%;
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -106,6 +114,15 @@
     .statistics {
         .statistics-paragraph {
             width: 100%;
+        }
+    }
+    .companies {
+        .companies-wrapper {
+            flex-wrap: wrap;
+            .companies-info {
+                padding: 20px;
+                width: 45%;
+            }
         }
     }
 }
@@ -209,6 +226,16 @@
         gap: 15px;
         .service-info {
             width: 100%;
+        }
+    }
+    .companies {
+        padding: 30px 0;
+        .companies-wrapper{
+            padding: 50px;
+            justify-content: flex-start;
+            .companies-info {
+                width: fit-content;
+            }
         }
     }
 }

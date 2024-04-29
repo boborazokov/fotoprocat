@@ -67,6 +67,18 @@
             width: 45%;
         }
     }
+    .news-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .news-info{
+            width: 45%;
+        }
+        .first, .third {
+            #first, #third {
+                grid-row: 2/3;
+            }
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -140,6 +152,18 @@
     #fourth {
         grid-row: 2/3;
         grid-column: 1/2;
+    }
+    .news-wrapper {
+        display: flex;
+        gap: 20px;
+        .news-info{
+            width: 100%;
+        }
+        .first, .third {
+            #first, #third {
+                grid-row: 1/2;
+            }
+        }
     }
 }
 

@@ -31,7 +31,7 @@
               <img src="../../svgs/header__icon-serch.svg" alt="serch-glass" />
               <input class="header__serch" type="search" placeholder="Поиск" />
             </div>
-            <a class="header__login" href="#">войти</a>
+            <label for="blok"><a class="header__login">войти</a></label>
           </div>
           <div class="header__icons">
             <div class="header__icon-star-wrapper header__icon-position">
@@ -53,6 +53,50 @@
           <a class="header__icon-link-bars" href="#">
             <i class="fa-solid fa-bars header__icon-bars"></i
           ></a>
+        </div>
+        <input type="checkbox" id="blok" />
+        <div class="header__login-wrapper">
+          <form class="header__login-form-wrapper">
+            <h2 class="header__login-title">Войдите в свой аккаунт</h2>
+            <input
+              class="header__login-input"
+              type="text"
+              placeholder="Логин"
+            />
+            <input
+              class="header__login-password"
+              type="password"
+              placeholder="Пароль"
+            />
+            <a class="header__login-password-know" href="#"
+              >Вспомнить логин или пароль?</a
+            >
+            <div class="header__login-checkbox-wrapper">
+              <input
+                class="header__login-checkbox"
+                type="checkbox"
+                id="password"
+              />
+              <label class="header__login-checkbox-text" for="password"
+                >Запомнить пароль для последующего входа
+              </label>
+            </div>
+            <div class="header__login-enter-wrapper">
+              <input class="header__login-submit" type="submit" value="Войти" />
+              <input
+                class="header__login-submit-entered"
+                type="submit"
+                value="Регистрация"
+              />
+            </div>
+            <label for="blok">
+              <img
+                class="header__login-img-cross"
+                src="../../svgs/cross.svg"
+                alt="cross"
+              />
+            </label>
+          </form>
         </div>
       </div>
     </header>

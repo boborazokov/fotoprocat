@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 }
-
+/*  teeeeeeest */
 a {
   text-decoration: none;
 }
@@ -343,7 +343,11 @@ td {
 }
 
 .teble__hover:hover {
-  background: linear-gradient(270deg, rgba(247, 247, 247, 0.5) 0%, #f7f7f7 93.23%);
+  background: linear-gradient(
+    270deg,
+    rgba(247, 247, 247, 0.5) 0%,
+    #f7f7f7 93.23%
+  );
 }
 
 .price__money td:nth-child(1),
@@ -544,4 +548,4 @@ table {
   .footer__message-phone {
     padding: 0 0 0 10px;
   }
-}/*# sourceMappingURL=stayle.css.map */
+} /*# sourceMappingURL=stayle.css.map */

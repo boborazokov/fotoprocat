@@ -80,7 +80,7 @@
 }
 
 .header__login {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Ubuntu;
   font-weight: 900;
   font-size: 14px;
   color: #000;
@@ -142,15 +142,15 @@ td {
 }
 
 .main__table__td-1 {
-  border: 1px solid #e3e3e3;
+  border: 1px solid #E3E3E3;
   border-top: 3px solid rgb(17, 210, 17);
   padding: 10px;
 }
 
 .main__table__td {
-  background-color: #e3e3e3;
-  color: #75758a;
-  border-color: #f0eeee;
+  background-color: #E3E3E3;
+  color: #75758A;
+  border-color: #c0c0c0;
   padding: 10px;
 }
 
@@ -228,7 +228,7 @@ td {
 .main__feature--p {
   width: 500px;
   text-align: center;
-  color: #75758a;
+  color: #75758A;
 }
 
 .main__feature--p1 {
@@ -246,14 +246,13 @@ td {
 }
 
 .main__feature__and--button-1 {
-  background-image: linear-gradient(#8ee902, #4f9c2c);
+  background-image: linear-gradient(#8EE902, #4F9C2C);
   color: white;
   border: none;
   padding: 20px;
   border-radius: 100px;
   width: 250px;
-  box-shadow: 0 8px 16px 0 rgba(12, 214, 86, 0.2),
-    0 6px 20px 0 rgba(54, 180, 100, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(12, 214, 86, 0.2), 0 6px 20px 0 rgba(54, 180, 100, 0.2);
   margin-top: 20px;
 }
 
@@ -265,8 +264,7 @@ td {
   border-radius: 100px;
   width: 250px;
   background-color: white;
-  box-shadow: 0 8px 16px 0 rgba(30, 31, 30, 0.2),
-    0 6px 20px 0 rgba(31, 38, 34, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(30, 31, 30, 0.2), 0 6px 20px 0 rgba(31, 38, 34, 0.2);
 }
 
 .main__bonus {
@@ -503,4 +501,4 @@ li {
   .fa-barss {
     display: block;
   }
-} /*# sourceMappingURL=stayle.css.map */
+}/*# sourceMappingURL=stayle.css.map */

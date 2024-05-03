@@ -117,6 +117,14 @@
   left: 10px;
 }
 
+hr {
+  color: #efeff0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .main__title-home {
   display: flex;
   flex-direction: column;
@@ -142,15 +150,16 @@ td {
 }
 
 .main__table__td-1 {
-  border: 1px solid #E3E3E3;
+  border: 1px solid #f0eeee;
   border-top: 3px solid rgb(17, 210, 17);
   padding: 10px;
+  background-color: white;
 }
 
 .main__table__td {
-  background-color: #E3E3E3;
+  background-color: #f0eeee;
   color: #75758A;
-  border-color: #c0c0c0;
+  border: none;
   padding: 10px;
 }
 
@@ -162,19 +171,6 @@ td {
   color: black;
   border-color: white;
   box-shadow: 1px 1px 1px 1px rgb(210, 209, 209);
-}
-
-.main__catalog__header {
-  display: flex;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.main__catalog__element {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 20px;
 }
 
 .main__title-text {
@@ -231,19 +227,6 @@ td {
   margin-top: -30px;
 }
 
-.main__inputs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
-  margin-top: 70px;
-}
-
-.main__inputs--1 {
-  width: 100%;
-  height: 60px;
-  padding: 20px;
-}
-
 .main__feature__header {
   display: flex;
   justify-content: end;
@@ -293,8 +276,41 @@ td {
   box-shadow: 0 8px 16px 0 rgba(30, 31, 30, 0.2), 0 6px 20px 0 rgba(31, 38, 34, 0.2);
 }
 
+.main__history__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.main__history__header2 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main__history__header1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.main__history__header1__div1__button {
+  width: 160px;
+  height: 39.34px;
+  gap: 0px;
+  opacity: 0px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
 .footer {
   background-color: #f5f5f5;
+}
+
+.footer1__li {
+  text-decoration: none;
+  color: black;
 }
 
 .footer__message {
@@ -421,16 +437,11 @@ li {
   gap: 16px;
 }
 
-.footer1__li {
-  color: black;
+li {
   text-decoration: none;
+  color: black;
 }
 
-@media screen and (max-width: 1260px) {
-  .main__catalog__header {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 1237px) {
   .main__feature--p1 {
     display: none;
@@ -447,26 +458,17 @@ li {
 }
 @media screen and (max-width: 920px) {
   .footer4,
-  .main__catalog__element-3,
-  .main__catalog__element-4,
-  .main__catalog__header-3,
-  .main__catalog__header-4,
   .header__link-wrapper-p3 {
     display: none;
-  }
-  .main__catalog__element {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 20px;
-  }
-  .main__catalog__element-4 {
-    margin-right: 100px;
   }
 }
 @media screen and (max-width: 898px) {
   .footer__list-wrappper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .main__history__header3, .main__history__header1__div3 {
+    display: none;
   }
 }
 @media screen and (max-width: 860px) {
@@ -476,6 +478,11 @@ li {
 }
 @media screen and (max-width: 860px) {
   .header__link-wrapper-p1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 838px) {
+  .main__history__header4, .main__history__header1__div4 {
     display: none;
   }
 }
@@ -497,9 +504,10 @@ li {
   .header__input-serch-wrapper {
     display: none;
   }
-  .main__inputs {
-    display: grid;
-    grid-template-columns: 1fr;
+}
+@media screen and (max-width: 666px) {
+  .main__history__header2, .main__history__header1__div2 {
+    display: none;
   }
 }
 @media screen and (max-width: 650px) {
@@ -511,14 +519,6 @@ li {
     display: none;
   }
   .footer__message-serch-email {
-    display: none;
-  }
-  .main__catalog__element-5,
-  .main__catalog__header-5 {
-    display: none;
-  }
-  .main__catalog__element-2,
-  .main__catalog__header-2 {
     display: none;
   }
 }
@@ -536,5 +536,13 @@ li {
   }
   .fa-barss {
     display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__history__header5, .main__history__header1__div5 {
+    display: none;
+  }
+  .main__history__header1 {
+    gap: 20px;
   }
 }/*# sourceMappingURL=stayle.css.map */

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/stayle.css" />
+    <link rel="icon" href="../img/img-photo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__home">
+          <div class="header__logo-wrapper">
+            <p class="header__logo-text">
+              fotoprokat <span class="header__logo-number">24</span>
+            </p>
+          </div>
+          <div class="header__link-wrapper">
+            <a href="#"><p class="header__link-wrapper-p1">Каталог</p></a>
+            <a href="#"><p class="header__link-wrapper-p2">О компании</p></a>
+            <a href="#"><p class="header__link-wrapper-p3">Новости</p></a>
+            <a href="#"><p class="header__link-wrapper-p4">Контакты</p></a>
+          </div>
+          <div class="header_serch-wrapper">
+            <div class="header__input-serch-wrapper">
+              <img src="../icon/header__icon-serch.svg" alt="serch-glass" />
+              <input class="header__serch" type="search" placeholder="Поиск" />
+            </div>
+            <a class="header__login" href="#">войти</a>
+            <a href="#">
+              <p class="fa-barss"><i class="fa-solid fa-bars"></i></p
+            ></a>
+          </div>
+          <div class="header__icons">
+            <div class="header__icon-star-wrapper header__icon-position">
+              <a href="#"
+                ><img src="../icon/header__icon-star.svg" alt="star" />
+                <span class="header__icon-number">5</span></a
+              >
+            </div>
+            <div class="header__icon-compare-wrapper header__icon-position">
+              <a href="#">
+                <img src="../icon/header__icon-compare.svg" alt="compare" />
+                <span class="header__icon-number">3</span></a
+              >
+            </div>
+            <div class="header__icon-shopping-wrapper header__icon-position">
+              <a href="#">
+                <img
+                  src="../icon/header__icon-shopping-cart.svg"
+                  alt="shopping"
+                />
+                <span class="header__icon-number">3</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="main__title-home">
+          <p class="main__title-text">Главная / Сравнить товары</p>
+          <h1>Корзина</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main__cart">
+      <div class="container">
+        <div class="main__cart__inputs">
+          <div>
+            <input
+              class="main__cart__inputs-1"
+              type="date"
+              placeholder="C какого числа"
+            />
+          </div>
+          <div>
+            <input
+              class="main__cart__inputs-1"
+              type="date"
+              placeholder="По какое число"
+            />
+          </div>
+        </div>
+        <hr style="margin-top: 50px" />
+        <div class="main__cart__take__name">
+          <p class="main__cart__take__name1">Фото</p>
+          <p class="main__cart__take__name2">Название</p>
+          <p class="main__cart__take__name3">Цена за месяц</p>
+          <p class="main__cart__take__name4">Количество</p>
+          <p class="main__cart__take__name5">Итого</p>
+        </div>
+        <hr style="margin-top: 10px" />
+        <div class="main__cart__name">
+          <img src="../img/main__catalog__element.png" alt="" />
+          <div class="main__cart__name1">
+            <h3>PowerShot SX620 HS</h3>
+            <p>Canon</p>
+          </div>
+          <p class="main__cart__name2" style="color: rgb(35, 192, 35)">
+            10 800 Р
+          </p>
+          <span class="main__cart__name__span"
+            ><button class="main__cart__name__button">+</button>
+            <p style="display: inline">4</p>
+            <button class="main__cart__name__button">-</button></span
+          >
+          <b class="main__cart__name3">43 200 Р</b>
+          <button class="main__cart__name__icon">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+        <hr style="margin-top: 10px" />
+        <div class="main__cart__name">
+          <img src="../img/main__catalog__element__2.png" alt="" />
+          <div class="main__cart__name1">
+            <h3>Alpha ILCE-6000 Kit</h3>
+
+            <p>Sony</p>
+          </div>
+          <p class="main__cart__name2" style="color: rgb(35, 192, 35)">
+            29 400 Р
+          </p>
+          <span class="main__cart__name__span"
+            ><button class="main__cart__name__button">+</button>
+            <p style="display: inline">6</p>
+            <button class="main__cart__name__button">-</button></span
+          >
+          <b class="main__cart__name3">176 400 Р</b>
+          <button class="main__cart__name__icon">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+
+        <div class="main__footer">
+          <div><button class="main__footer-1">Номер купона</button></div>
+          <div><button class="main__footer-2">Оформить заказ</button></div>
+
+          <div>
+            <div class="main__footer__div">
+              <div>Итого: <br /></div>
+              <div>
+                <h1>219 600 Р</h1>
+                <br />
+                <p class="main__footer__p"></p>
+                <br />
+                <p>Цена указана за 184 суток</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <footer class="footer">
+        <section class="footer__message">
+          <div class="container">
+            <div class="footer__message-wrapper">
+              <div class="footer__message-icon-wrapper">
+                <img src="../icon/footer__icon-mesege.svg" alt="icon-message" />
+                <p class="footer__message-text">
+                  <span style="color: rgb(16, 188, 16)">Подпишитесь</span>
+                  <br />
+                  на новости и акции
+                </p>
+              </div>
+              <div class="footer__message-serch-email">
+                <input
+                  class="footer__input-serch"
+                  type="search"
+                  placeholder="Введите e-mail"
+                />
+                <button class="footer__button-like" type="submit">
+                  Подписаться
+                </button>
+              </div>
+              <div class="footer__message-phone">
+                <a href="#">
+                  <img
+                    src="../icon/footer__icon-phone-call.svg"
+                    alt="icon-phone-call"
+                /></a>
+                <a href="#">
+                  <p
+                    style="color: rgb(16, 188, 16)"
+                    class="footer__text-phone-call"
+                  >
+                    Заказать звонок
+                  </p></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer__list">
+          <div class="container">
+            <div class="footer__list-wrappper">
+              <ul class="footer__list-logo-wrapper">
+                <p class="footer__logo-text">
+                  fotoprokat <span class="footer__logo-number">24</span>
+                </p>
+                <li class="footer__list-logo-text">
+                  Самый удобный в Москве сервис аренды фото, видео и кинотехники
+                </li>
+                <li>© 2015 – 2019 Fotoprokat 24</li>
+                <div class="footer__list-icon">
+                  <a href="https://www.facebook.com/"
+                    ><img
+                      src="../icon/footer-icon-facebook.svg"
+                      alt="icon-facebook"
+                  /></a>
+                  <a href="https://www.twitter.com/"
+                    ><img
+                      src="../icon/footer-icon-twitter.svg"
+                      alt="icon-twitter"
+                  /></a>
+                  <a href="https://www.vk.com/"
+                    ><img src="../icon/footer-icon-vk.svg" alt="icon-vk"
+                  /></a>
+                  <a href="https://www.youtube.com/"
+                    ><img
+                      src="../icon/footer-icon-youtube.svg"
+                      alt="icon-youtube"
+                  /></a>
+                  <a href="https://www.instagram.com/"
+                    ><img
+                      src="../icon/footer-icon-instagram.svg"
+                      alt="icon-instagram"
+                  /></a>
+                </div>
+              </ul>
+              <ul class="footer1">
+                <a href="#"> <h3 class="footer1__li">Компании</h3></a>
+                <a href="#"> <li class="footer1__li">о компании</li></a>
+                <a href="#"> <li class="footer1__li">новости</li></a>
+                <a href="#"> <li class="footer1__li">вакансии</li></a>
+                <a href="#"> <li class="footer1__li">Политики</li></a>
+                <a href="#"> <li class="footer1__li">конфиденциальности</li></a>
+              </ul>
+              <ul class="footer2">
+                <a href="#"> <h3 class="footer1__li">Клиентам</h3></a>
+                <a href="#"> <li class="footer1__li">о компании</li></a>
+                <a href="#"> <li class="footer1__li">новости</li></a>
+                <a href="#"> <li class="footer1__li">вакансии</li></a>
+                <a href="#"> <li class="footer1__li">Политики</li></a>
+                <a href="#"> <li class="footer1__li">конфиденциальности</li></a>
+              </ul>
+              <ul class="footer3">
+                <a href="#"> <h3 class="footer1__li">Компании</h3></a>
+                <a href="#"> <li class="footer1__li">о компании</li></a>
+                <a href="#"> <li class="footer1__li">новости</li></a>
+                <a href="#"> <li class="footer1__li">вакансии</li></a>
+                <a href="#"> <li class="footer1__li">Политики</li></a>
+                <a href="#"> <li class="footer1__li">конфиденциальности</li></a>
+              </ul>
+              <ul class="footer4">
+                <a href="#"> <h3 class="footer1__li">Компании</h3></a>
+                <a href="#"> <li class="footer1__li">о компании</li></a>
+                <a href="#"> <li class="footer1__li">новости</li></a>
+                <a href="#"> <li class="footer1__li">вакансии</li></a>
+                <a href="#"> <li class="footer1__li">Политики</li></a>
+                <a href="#"> <li class="footer1__li">конфиденциальности</li></a>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

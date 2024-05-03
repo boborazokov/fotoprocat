@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.line {
+  border: 1px solid #efefef;
+}
+
+.header__home {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0 32px 0;
+}
+
+.header__logo-text {
+  display: flex;
+  gap: 7px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 21px;
+  color: #000;
+}
+
+.header__logo-number {
+  color: #8ce901;
+}
+
+.header__link-wrapper {
+  display: flex;
+  gap: 22px;
+}
+.header__link-wrapper a {
+  font-family: Ubuntu;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header_serch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header__input-serch-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header__input-serch-wrapper img {
+  position: absolute;
+  left: 10px;
+}
+
+.header__serch {
+  background-color: #f7f7f7;
+  border: none;
+  border-top: 1.5px solid rgb(162, 162, 162);
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 20px 10px 35px;
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c3c3c;
+}
+
+.header__login {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.fa-barss {
+  display: none;
+}
+
+.header__icon-position {
+  position: relative;
+}
+
+.header__icon-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #3c3c3c;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.main__title-home {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  padding: 45px 0;
+}
+
+.main__h1__span {
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 30px;
+  color: #8ee901;
+}
+
+.main__table {
+  display: flex;
+  justify-content: end;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.main__table__td-1 {
+  border: 1px solid #e3e3e3;
+  border-top: 3px solid rgb(17, 210, 17);
+  padding: 10px;
+}
+
+.main__table__td {
+  background-color: #e3e3e3;
+  color: #75758a;
+  border-color: #f0eeee;
+  padding: 10px;
+}
+
+.main__catalog__element__button {
+  padding: 10px;
+  border-radius: 32px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  border-color: white;
+  box-shadow: 1px 1px 1px 1px rgb(210, 209, 209);
+}
+
+.main__title-text {
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.main__title h2 {
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 30px;
+  color: #8ee901;
+}
+.main__title h3 {
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+}
+
+.main__products-home {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.main__products-wrapper {
+  display: flex;
+  gap: 19px;
+}
+.main__products-wrapper a {
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.6;
+}
+.main__products-wrapper a:hover {
+  color: #60b021;
+}
+
+.main__products-hidden-text {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+
+.main {
+  margin-top: -30px;
+}
+
+.main__feature__header {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+  gap: 300px;
+}
+
+.main__feature--p {
+  width: 500px;
+  text-align: center;
+  color: #75758a;
+}
+
+.main__feature--p1 {
+  color: green;
+}
+
+.main__feature__and {
+  display: flex;
+  justify-content: center;
+}
+
+.main__feature__and1 {
+  display: flex;
+  justify-content: center;
+}
+
+.main__feature__and--button-1 {
+  background-image: linear-gradient(#8ee902, #4f9c2c);
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+  width: 250px;
+  box-shadow: 0 8px 16px 0 rgba(12, 214, 86, 0.2),
+    0 6px 20px 0 rgba(54, 180, 100, 0.2);
+  margin-top: 20px;
+}
+
+.main__feature__and--button-2 {
+  margin-top: 50px;
+  color: #000000;
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(30, 31, 30, 0.2),
+    0 6px 20px 0 rgba(31, 38, 34, 0.2);
+}
+
+.main__bonus {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.main__bonus__div1,
+.main__bonus__div2 {
+  border: none;
+  padding: 15px;
+  box-shadow: 0px 3px 3px 0px rgb(43, 42, 42);
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer1__li {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__message {
+  background-color: #515668;
+  padding: 16px 0;
+  margin-top: 20px;
+}
+
+.footer__message-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.footer__message-icon-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__message-text {
+  max-width: 153px;
+  width: 100%;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.footer__message-serch-email {
+  max-width: 475px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.footer__input-serch {
+  max-width: 475px;
+  width: 100%;
+  padding: 12px 150px 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.footer__button-like {
+  height: 100%;
+  padding: 12px 30px;
+  position: absolute;
+  right: -1px;
+  border-radius: 0 100px 100px 0;
+  border: none;
+  background-color: green;
+  cursor: pointer;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__message-phone {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__text-phone-call {
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+  line-height: 25px;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.footer__list-wrappper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 15px;
+}
+
+.footer__list-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-right: 50px;
+}
+
+.footer__logo-text {
+  display: flex;
+  gap: 7px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 21px;
+  color: #000;
+}
+
+.footer__logo-number {
+  color: #8ce901;
+}
+
+.footer__list-logo-text {
+  max-width: 280px;
+  width: 100%;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  line-height: 20px;
+}
+
+.footer__list-icon {
+  display: flex;
+  gap: 16px;
+}
+
+li {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1237px) {
+  .main__feature--p1 {
+    display: none;
+  }
+  .main__feature__header {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1005px) {
+  .header__link-wrapper-p2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .footer4,
+  .header__link-wrapper-p3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 898px) {
+  .footer__list-wrappper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 860px) {
+  .header__link-wrapper-p4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 860px) {
+  .header__link-wrapper-p1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 779px) {
+  .footer__list-wrappper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 724px) {
+  .header__icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 860px) {
+  .header__input-serch-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer__list-wrappper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer2 {
+    display: none;
+  }
+  .footer__message-serch-email {
+    display: none;
+  }
+}
+@media screen and (max-width: 532px) {
+  .footer__list-wrappper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer__list-wrappper {
+    display: flex;
+    justify-content: center;
+  }
+  .footer1 {
+    display: none;
+  }
+  .fa-barss {
+    display: block;
+  }
+} /*# sourceMappingURL=stayle.css.map */

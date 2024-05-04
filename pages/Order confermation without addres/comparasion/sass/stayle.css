@@ -220,7 +220,7 @@ td {
 }
 
 .main__cart__element1-p {
-  color: #75758A;
+  color: #75758a;
 }
 
 .main__cart__Goods-div {
@@ -257,7 +257,7 @@ td {
   width: 100%;
   height: 50px;
   padding: 30px;
-  border-color: #E3E3E3;
+  border-color: #e3e3e3;
 }
 
 .main__cart__map {
@@ -284,11 +284,161 @@ td {
   gap: 0px;
   border-radius: 20px;
   opacity: 0px;
-  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
   color: white;
   border: none;
-  box-shadow: 0px 3px 3px 0px #4F9C2C;
+  box-shadow: 0px 3px 3px 0px #4f9c2c;
   padding: 10px;
+}
+
+.price__all:active {
+  transform: scale(0.98);
+}
+
+.main__table-wrapper {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .main__title-home {
+    padding: 20px 0;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .main__products-wrapper {
+    display: none;
+  }
+  .price__button-wrapper {
+    padding: 30px 0 30px 0;
+  }
+}
+.header__login-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6862745098);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.header__login-form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 450px;
+  width: 100%;
+  padding: 46px 30px 30px 30px;
+  border-radius: 15px;
+  gap: 17px;
+  background-color: #ffffff;
+}
+
+.header__login-title {
+  width: 100%;
+  text-align: center;
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+.header__login-input,
+.header__login-password {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #e3e3e3;
+  padding: 12px 20px;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  outline: none;
+}
+
+.header__login-password-know {
+  text-decoration: underline;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #60b021;
+}
+
+.header__login-checkbox-wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+.header__login-checkbox-text {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+.header__login-enter-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__login-submit,
+.header__login-submit-entered {
+  max-width: 200px;
+  width: 100%;
+  padding: 17px;
+  border: none;
+  background: linear-gradient(180deg, #8ee902 0%, #4f9c2c 100%);
+  border-radius: 100px;
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__login-submit:hover {
+  background: linear-gradient(180deg, #72bd01 0%, #368611 100%);
+}
+
+.header__login-submit:active,
+.header__login-submit-entered:active {
+  transform: scale(0.98);
+}
+
+.header__login-submit-entered:hover {
+  background: linear-gradient(180deg, #72bd01 0%, #368611 100%);
+  color: #fff;
+}
+
+.header__login-submit-entered {
+  background: transparent;
+  color: #000;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.header__login-img-cross {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+
+#blok {
+  display: none;
+}
+
+#blok:checked + .header__login-wrapper {
+  display: flex;
 }
 
 .footer {
@@ -456,7 +606,8 @@ li {
   }
 }
 @media screen and (max-width: 860px) {
-  .header__link-wrapper-p4, .header__link-wrapper-p1 {
+  .header__link-wrapper-p4,
+  .header__link-wrapper-p1 {
     display: none;
   }
 }
@@ -535,4 +686,4 @@ li {
     gap: 10px;
     padding: 10px;
   }
-}/*# sourceMappingURL=stayle.css.map */
+} /*# sourceMappingURL=stayle.css.map */

@@ -1,0 +1,119 @@
+@mixin font ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.products-title {
+    @include font(22px, 650);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.products-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.product {
+    width: 31%;
+    border: 1px solid #efefef;
+    .cam-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        img {
+            width: fit-content;
+        }
+        .product-icon {
+            position: absolute;
+            margin-left: 19.5em;
+        }
+        .cam-title {
+            text-align: center;
+        }
+    }
+    h3{
+        @include font(16px, 600);
+    }
+    p{
+        @include font(14px, 400);
+        color: #75758A;
+    }
+    .price-wrapper {
+        display: flex;
+        .price-text {
+            border: 1px solid #efefef;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .button-wrapper {
+        display: flex;
+        gap: 15px;
+        padding: 20px;
+        button {
+            border-radius: 100px;
+            box-shadow: 0px 2px 6px 0px #00000026;
+            border: none;
+            width: 100%;
+            padding: 10px 25px;
+            @include font(14px, 550)
+        }
+        .btn-white {
+            background-color: #ffffff;
+        }
+        .btn-green {
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            color: white;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        width: 570px;
+        color: #75758A;
+        @include font(14px, 450);
+        line-height: 26px;
+        text-align: center;
+    }
+    .product-button {
+        display: flex;
+        gap: 15px;
+        width: 570px;
+        padding: 15px 0;
+        button {
+            width: 100%;
+            border-radius: 100px;
+            border: none;
+            @include font(14px, 550);
+            text-transform: uppercase;
+            padding: 15px 25px;
+        }
+        .btn-green {
+            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+            color: white;
+        }
+        .btn-white {
+            background: #ffffff;
+            box-shadow: 0px 2px 6px 0px #00000026;
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@mixin font ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.companies {
+    padding: 100px 0;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .companies-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        .companies-info {
+            width: 22%;
+            background: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h3 {
+                @include font(16px, 600);
+            }
+            p {
+                @include font(14px, 400);
+                color: #75758A;
+            }
+            a {
+                @include font(14px, 400);
+                color: #60B021;
+            }
+        }
+    }
+}

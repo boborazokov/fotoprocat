@@ -1,0 +1,848 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.line {
+  border: 1px solid #efefef;
+}
+
+li {
+  list-style: none;
+}
+
+.header__home {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0 32px 0;
+}
+
+.header__logo-text {
+  display: flex;
+  gap: 7px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 21px;
+  color: #000;
+}
+
+.header__logo-number {
+  color: #8ce901;
+}
+
+.header__link-wrapper {
+  display: flex;
+  gap: 22px;
+}
+.header__link-wrapper a {
+  font-family: Ubuntu;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header_serch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header__input-serch-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header__input-serch-wrapper img {
+  position: absolute;
+  left: 10px;
+}
+
+.header__serch {
+  background-color: #f7f7f7;
+  border: none;
+  border-top: 2px solid rgb(162, 162, 162);
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 20px 10px 35px;
+  font-family: Ubuntu;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3c3c3c;
+}
+
+.header__login {
+  font-family: Ubuntu;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.header__icon-position {
+  position: relative;
+}
+
+.header__icon-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #3c3c3c;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.header__icon-bars {
+  font-size: 25px;
+}
+
+.header__icon-link-bars, .header-dropdown {
+  display: none;
+  color: #000;
+}
+
+@media screen and (max-width: 990px) {
+  .header__link-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__input-serch-wrapper,
+  .header__login {
+    display: none;
+  }
+  .header__icon-link-bars {
+    display: block;
+  }
+  .header-bars:hover .header-dropdown {
+    display: block;
+  }
+  .header-bars:hover .header-dropdown {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 5px 15px;
+  }
+  .header-bars:hover .header-dropdown ul li {
+    padding: 8px 15px;
+  }
+  .header-bars:hover .header-dropdown ul li a {
+    color: black;
+    text-align: right;
+  }
+  .header-bars:hover .header-dropdown ul li:hover {
+    background-color: #F5F5F5;
+    width: 100%;
+    color: #60B021;
+  }
+  .header-bars:hover .header-dropdown ul li a:hover {
+    color: #60B021;
+    text-align: right;
+  }
+}
+.main {
+  background-image: url(../images/a-girl-with-a-cam.png);
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+  background-repeat: no-repeat;
+}
+.main .main-title {
+  padding: 400px 30px 30px;
+  display: inline-block;
+  background-image: url(../images/bg-circle.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.main .main-title p {
+  background-color: white;
+  width: fit-content;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.main-icons {
+  background-color: #F5F5F5;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+}
+.icon-wrapper div {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.icon-wrapper div p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.products-title {
+  font-size: 22px;
+  font-weight: 650;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.product {
+  width: 31%;
+  border: 1px solid #efefef;
+}
+.product .cam-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.product .cam-wrapper img {
+  width: fit-content;
+}
+.product .cam-wrapper .product-icon {
+  position: absolute;
+  margin-left: 19.5em;
+}
+.product .cam-wrapper .cam-title {
+  text-align: center;
+}
+.product h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.product p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #75758A;
+}
+.product .price-wrapper {
+  display: flex;
+}
+.product .price-wrapper .price-text {
+  border: 1px solid #efefef;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.product .button-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+.product .button-wrapper button {
+  border-radius: 100px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 550;
+  font-family: "Ubuntu", sans-serif;
+}
+.product .button-wrapper .btn-white {
+  background-color: #ffffff;
+}
+.product .button-wrapper .btn-green {
+  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-info p {
+  width: 570px;
+  color: #75758A;
+  font-size: 14px;
+  font-weight: 450;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 26px;
+  text-align: center;
+}
+.product-info .product-button {
+  display: flex;
+  gap: 15px;
+  width: 570px;
+  padding: 15px 0;
+}
+.product-info .product-button button {
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+  font-weight: 550;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  padding: 15px 25px;
+}
+.product-info .product-button .btn-green {
+  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  color: white;
+}
+.product-info .product-button .btn-white {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.results-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  padding: 50px 0;
+}
+.results-wrapper img {
+  width: 100%;
+}
+.results-wrapper .results-paragraph {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 15px;
+}
+.results-wrapper .results-paragraph p {
+  font-size: 16px;
+  font-weight: 550;
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 8px;
+  width: fit-content;
+}
+
+#fourth {
+  grid-column: 1/3;
+}
+
+.statistics {
+  background-color: #F5F5F5;
+  padding-bottom: 50px;
+}
+.statistics .statistics-paragraph {
+  width: 570px;
+  color: #75758A;
+  font-size: 14px;
+  font-weight: 450;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statistics-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  width: 100%;
+}
+.service-wrapper .service-info {
+  width: 25%;
+  background-color: #FFFFFF;
+  padding: 20px 25px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.service-wrapper .service-info p {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.service-wrapper .service-info img {
+  margin-top: 50px;
+}
+
+.btn-green {
+  width: fit-content;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 550;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  padding: 15px 35px;
+}
+
+.news-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.news-wrapper .news-info {
+  width: 100%;
+  border: 1px solid #efefef;
+}
+.news-wrapper .news-info .news-title {
+  padding: 10px 20px;
+}
+.news-wrapper .news-info img {
+  width: 100%;
+}
+.news-wrapper .news-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 10px;
+}
+.news-wrapper .news-info p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #75758A;
+  line-height: 26px;
+}
+.news-wrapper .first, .news-wrapper .third {
+  display: grid;
+  grid-template-columns: auto;
+}
+.news-wrapper .first #first, .news-wrapper .first #third, .news-wrapper .third #first, .news-wrapper .third #third {
+  grid-row: 2/3;
+}
+
+.companies {
+  padding: 100px 0;
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.companies .companies-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.companies .companies-wrapper .companies-info {
+  width: 22%;
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.companies .companies-wrapper .companies-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.companies .companies-wrapper .companies-info p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #75758A;
+}
+.companies .companies-wrapper .companies-info a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #60B021;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer__message {
+  background-color: #515668;
+  padding: 16px 0;
+}
+
+.footer__message-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.footer__message-icon-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__message-text {
+  max-width: 153px;
+  width: 100%;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.footer__message-serch-email {
+  max-width: 475px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.footer__input-serch {
+  max-width: 475px;
+  width: 100%;
+  padding: 12px 150px 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.footer__button-like {
+  height: 100%;
+  padding: 12px 30px;
+  position: absolute;
+  right: -1px;
+  border-radius: 0 100px 100px 0;
+  border: none;
+  background-color: green;
+  cursor: pointer;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__message-phone {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__text-phone-call {
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer__list li {
+  list-style: none;
+  line-height: 25px;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.footer__list-wrappper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.footer__list-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__logo-text {
+  display: flex;
+  gap: 7px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 21px;
+  color: #000;
+}
+
+.footer__logo-number {
+  color: #8ce901;
+}
+
+.footer__list-logo-text {
+  max-width: 280px;
+  width: 100%;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  line-height: 20px;
+}
+
+.footer__list-icon {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__message-serch-email {
+    display: none;
+  }
+  .footer__list-wrappper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__message-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .footer__message-phone {
+    padding: 0 0 0 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .products-wrapper {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 45%;
+  }
+}
+@media (max-width: 1000px) {
+  .main-icons {
+    background-color: #FFFFFF;
+  }
+  .icon-wrapper {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .icon-wrapper div {
+    background-color: #F5F5F5;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .icon-wrapper div img {
+    width: fit-content;
+  }
+  .service-wrapper {
+    flex-wrap: wrap;
+  }
+  .service-wrapper .service-info {
+    width: 30%;
+  }
+  .companies .companies-wrapper {
+    flex-wrap: wrap;
+  }
+  .companies .companies-wrapper .companies-info {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .product .cam-wrapper .product-icon {
+    margin-left: 14em;
+  }
+  .product .price-wrapper {
+    flex-wrap: wrap;
+  }
+  .product .price-wrapper .price-text {
+    width: 45%;
+  }
+  .product .button-wrapper {
+    flex-wrap: wrap;
+  }
+  .results-wrapper {
+    grid-template-columns: auto auto;
+  }
+  #fourth {
+    grid-row: 2/4;
+  }
+  .service-wrapper .service-info {
+    width: 45%;
+  }
+  .news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-wrapper .news-info {
+    width: 45%;
+  }
+  .news-wrapper .first #first, .news-wrapper .first #third, .news-wrapper .third #first, .news-wrapper .third #third {
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    background-image: url(../images/header-responsive.svg);
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
+  }
+  .main .main-title {
+    background-image: url(../images/bg-circle.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin-top: 380px;
+    padding: 0 30px 30px;
+  }
+  .icon-wrapper {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .icon-wrapper div {
+    width: 30%;
+  }
+  .statistics .statistics-paragraph {
+    width: 100%;
+  }
+  .companies .companies-wrapper {
+    flex-wrap: wrap;
+  }
+  .companies .companies-wrapper .companies-info {
+    padding: 20px;
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .main .main-title {
+    margin-top: 300px;
+  }
+  .main .main-title p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .product {
+    width: 100%;
+  }
+  .product .cam-wrapper .product-icon {
+    margin-left: 25em;
+  }
+  .product .price-wrapper {
+    flex-wrap: nowrap;
+  }
+  .product .button-wrapper {
+    flex-wrap: nowrap;
+  }
+  .product-info p {
+    width: 100%;
+  }
+  .product-info .product-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .product-info .product-button button {
+    width: fit-content;
+    padding: 15px 25px;
+  }
+  .results-wrapper {
+    grid-template-columns: auto;
+  }
+  #fourth {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .news-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .news-wrapper .news-info {
+    width: 100%;
+  }
+  .news-wrapper .first #first, .news-wrapper .first #third, .news-wrapper .third #first, .news-wrapper .third #third {
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 470px) {
+  .main .main-title {
+    margin-top: 210px;
+  }
+  .icon-wrapper div {
+    width: 45%;
+  }
+  .product .cam-wrapper .product-icon {
+    margin-left: 18em;
+  }
+  .product .price-wrapper .price-text {
+    padding: 5px;
+  }
+  .product .button-wrapper button {
+    padding: 10px 15px;
+  }
+  .product-info .product-button {
+    flex-wrap: wrap;
+  }
+  .products-title {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .service-wrapper {
+    gap: 15px;
+  }
+  .service-wrapper .service-info {
+    width: 100%;
+  }
+  .companies {
+    padding: 30px 0;
+  }
+  .companies .companies-wrapper {
+    padding: 50px;
+    justify-content: flex-start;
+  }
+  .companies .companies-wrapper .companies-info {
+    width: fit-content;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

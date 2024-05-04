@@ -1,0 +1,48 @@
+@mixin font ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-image: url(../images/a-girl-with-a-cam.png);
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
+    background-repeat: no-repeat;
+    .main-title {
+        padding: 400px 30px 30px; 
+        display: inline-block;
+        background-image: url(../images/bg-circle.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        p {
+            background-color: white;
+            width: fit-content;
+            padding: 10px;
+            @include font(30px, 600);
+            text-transform:uppercase;
+            box-shadow: 0px 2px 6px 0px #00000026;
+            
+        }
+    }
+}
+.main-icons {
+    background-color: #F5F5F5;
+}
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+    div {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        p{
+            @include font(14px, 500)
+        }
+    }
+}

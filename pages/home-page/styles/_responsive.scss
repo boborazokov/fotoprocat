@@ -1,0 +1,241 @@
+@mixin font ($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 1200px) {
+    .products-wrapper {
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 45%;
+    }
+}
+@media (max-width:1000px) {
+    .main-icons {
+        background-color: #FFFFFF;
+    }
+    .icon-wrapper {
+        justify-content: flex-start;
+        gap: 15px;
+        div {
+            background-color: #F5F5F5;
+            padding: 15px;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            gap: 15px;
+            img{
+                width: fit-content;
+            }
+        }
+    }
+    .service-wrapper {
+        flex-wrap: wrap;
+        .service-info {
+            width: 30%;
+        }
+    }
+    .companies {
+        .companies-wrapper {
+            flex-wrap: wrap;
+            .companies-info {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .product {
+        .cam-wrapper {
+            .product-icon {
+                margin-left: 14em;
+            }
+        }
+        .price-wrapper {
+            flex-wrap: wrap;
+            .price-text {
+                width: 45%;
+            }
+        }
+        .button-wrapper {
+            flex-wrap: wrap;
+        }
+    }
+    .results-wrapper {
+        grid-template-columns: auto auto;
+    }
+    #fourth {
+        grid-row: 2/4;
+    }
+    .service-wrapper {
+        .service-info {
+            width: 45%;
+        }
+    }
+    .news-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .news-info{
+            width: 45%;
+        }
+        .first, .third {
+            #first, #third {
+                grid-row: 2/3;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        background-image: url(../images/header-responsive.svg);
+        background-size: cover;
+        background-position: center;
+        height: fit-content;
+        .main-title {
+            background-image: url(../images/bg-circle.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            margin-top: 380px;
+            padding: 0 30px 30px; 
+        }
+    }
+    .icon-wrapper {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        div {
+            width: 30%;  
+        }
+    }
+    .statistics {
+        .statistics-paragraph {
+            width: 100%;
+        }
+    }
+    .companies {
+        .companies-wrapper {
+            flex-wrap: wrap;
+            .companies-info {
+                padding: 20px;
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        .main-title {
+            margin-top: 300px;
+            p{
+                @include font(20px, 600)
+            }
+        }
+    }
+    .product {
+        width: 100%;
+        .cam-wrapper {
+            .product-icon {
+                margin-left: 25em;
+            }
+        }
+        .price-wrapper {
+            flex-wrap: nowrap;
+        }
+        .button-wrapper {
+            flex-wrap: nowrap;
+        }
+    }
+    .product-info {
+        p{
+            width: 100%;
+        }
+        .product-button {
+            width: 100%;
+            justify-content: center;
+            button {
+                width: fit-content;
+                padding: 15px 25px;
+            }
+        }
+    }
+    .results-wrapper {
+        grid-template-columns: auto;
+    }
+    #fourth {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .news-wrapper {
+        display: flex;
+        gap: 20px;
+        .news-info{
+            width: 100%;
+        }
+        .first, .third {
+            #first, #third {
+                grid-row: 1/2;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .main {
+        .main-title {
+            margin-top: 210px;
+        }
+    }
+
+    .icon-wrapper {
+        div {
+            width: 45%;
+        }
+    }
+
+    .product {
+        .cam-wrapper {
+            .product-icon {
+                margin-left: 18em;
+            }
+        }
+        .price-wrapper {
+            .price-text {
+                padding: 5px;
+            }
+        }
+        .button-wrapper {
+            button {
+                padding: 10px 15px;
+            }
+        }
+    }
+    .product-info {
+        .product-button{
+            flex-wrap: wrap;
+        }
+    }
+    .products-title {
+        @include font(19px, 600)
+    }
+    .service-wrapper {
+        gap: 15px;
+        .service-info {
+            width: 100%;
+        }
+    }
+    .companies {
+        padding: 30px 0;
+        .companies-wrapper{
+            padding: 50px;
+            justify-content: flex-start;
+            .companies-info {
+                width: fit-content;
+            }
+        }
+    }
+}

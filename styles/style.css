@@ -145,7 +145,7 @@ li {
   }
 }
 .main {
-  background-image: url(../images/a-girl-with-a-cam.png);
+  background-image: url(../images/images\ copy/a-girl-with-a-cam.png);
   background-size: cover;
   background-position: center;
   height: -moz-fit-content;
@@ -155,7 +155,7 @@ li {
 .main .main-title {
   padding: 400px 30px 30px;
   display: inline-block;
-  background-image: url(../images/bg-circle.png);
+  background-image: url(../images/images\ copy/bg-circle.png);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -445,7 +445,7 @@ li {
 
 .companies {
   padding: 100px 0;
-  background-image: url(../images/map.png);
+  background-image: url(../images/images\ copy/map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -702,14 +702,14 @@ li {
 }
 @media (max-width: 700px) {
   .main {
-    background-image: url(../images/header-responsive.svg);
+    background-image: url(../images/images\ copy/header-responsive.svg);
     background-size: cover;
     background-position: center;
     height: -moz-fit-content;
     height: fit-content;
   }
   .main .main-title {
-    background-image: url(../images/bg-circle.png);
+    background-image: url(../images/images\ copy/bg-circle.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     margin-top: 380px;
